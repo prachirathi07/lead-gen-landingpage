@@ -9,32 +9,72 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Indigo primary palette */
+    --primary: 238 56% 17%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 238 56% 25%;
+    
+    /* Amber secondary accent */
+    --secondary: 45 93% 47%;
+    --secondary-foreground: 215 25% 27%;
+    --secondary-hover: 45 93% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Slate neutrals */
+    --muted: 215 20% 97%;
+    --muted-foreground: 215 16% 47%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 215 25% 27%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 20% 91%;
+    --input: 215 20% 91%;
+    --ring: 238 56% 17%;
+    
+    /* Custom brand colors */
+    --indigo-50: 238 100% 97%;
+    --indigo-100: 238 94% 93%;
+    --indigo-600: 238 56% 53%;
+    --indigo-700: 238 56% 45%;
+    --indigo-800: 238 56% 37%;
+    --indigo-900: 238 56% 17%;
+    
+    --amber-300: 45 93% 67%;
+    --amber-400: 45 93% 58%;
+    --amber-500: 45 93% 47%;
+    
+    --slate-50: 215 20% 98%;
+    --slate-100: 215 16% 95%;
+    --slate-200: 215 20% 91%;
+    --slate-300: 215 16% 85%;
+    --slate-600: 215 19% 35%;
+    --slate-700: 215 25% 27%;
+    --slate-800: 215 28% 17%;
+    --slate-900: 215 28% 9%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--indigo-600)), hsl(var(--indigo-800)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--background)), hsl(var(--slate-50)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--indigo-700)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-card: 0 10px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-hero: 0 25px 50px -12px rgb(99 102 241 / 0.25);
+    
+    /* Glass effect */
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.2);
 
     --radius: 0.5rem;
 
