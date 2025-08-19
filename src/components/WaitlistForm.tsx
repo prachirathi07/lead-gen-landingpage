@@ -78,15 +78,37 @@ const WaitlistForm = () => {
 
     setIsSubmitting(true);
 
-    // Simulate API call
+    // Submit to n8n webhook for Google Sheets
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setIsSubmitted(true);
-      toast({
-        title: "Success! 🎉",
-        description: "You're on the list! We'll reach out with your cohort slot and next steps.",
+      const response = await fetch("https://n8n.srv963601.hstgr.cloud/webhook/2bf88ca5-ec30-4676-8fbb-29c7e2f5daf2", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          contact: formData.contact,
+          position: formData.position,
+          businessName: formData.businessName,
+          website: formData.website,
+          employeeSize: formData.employeeSize,
+          consent: formData.consent,
+          timestamp: new Date().toISOString(),
+        }),
       });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        toast({
+          title: "Success! 🎉",
+          description: "You're on the list! We'll reach out with your cohort slot and next steps.",
+        });
+      } else {
+        throw new Error("Failed to submit");
+      }
     } catch (error) {
+      console.error("Submission error:", error);
       toast({
         title: "Error",
         description: "Something went wrong. Please try again.",

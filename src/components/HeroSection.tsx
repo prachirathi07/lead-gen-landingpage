@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+const heroImageUrl = "/lovable-uploads/4e2a7c6c-d912-4aac-8325-927c4bcbffe1.png";
 
 const HeroSection = () => {
   const scrollToWaitlist = () => {
@@ -77,8 +77,8 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative z-10">
               <img 
-                src={heroImage} 
-                alt="AI Neno LeadGen Platform" 
+                src={heroImageUrl} 
+                alt="Revenue growth with AI Neno LeadGen - Transform ₹1 into qualified leads" 
                 className="w-full h-auto rounded-2xl shadow-hero"
               />
             </div>
