@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-cta rounded-lg flex items-center justify-center">
-                <span className="text-background font-bold text-lg">N</span>
+                <span className="text-background font-bold text-lg">C</span>
               </div>
               <span className="font-geometric font-bold text-xl">ClientFactory</span>
             </div>
@@ -82,10 +82,10 @@ const Footer = () => {
             <h3 className="font-geometric font-semibold text-background">Contact</h3>
             <div className="space-y-2">
               <a 
-                href="mailto:hello@nenotechnology.com"
+                href="mailto:clientfactoryy@gmail.com"
                 className="block text-slate-300 hover:text-background transition-colors font-humanist text-sm"
               >
-                hello@nenotechnology.com
+                clientfactoryy@gmail.com
               </a>
               <p className="text-slate-300 font-humanist text-sm">
                 Gujarat, India

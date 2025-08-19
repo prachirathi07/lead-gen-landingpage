@@ -15,7 +15,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-cta rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">N</span>
+              <span className="text-primary-foreground font-bold text-lg">C</span>
             </div>
             <span className="font-geometric font-bold text-xl text-foreground">ClientFactory</span>
           </div>
