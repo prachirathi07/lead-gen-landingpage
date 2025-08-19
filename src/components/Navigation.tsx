@@ -17,7 +17,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-cta rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">N</span>
             </div>
-            <span className="font-geometric font-bold text-xl text-foreground">AI Neno</span>
+            <span className="font-geometric font-bold text-xl text-foreground">ClientFactory</span>
           </div>
 
           {/* Navigation Links */}

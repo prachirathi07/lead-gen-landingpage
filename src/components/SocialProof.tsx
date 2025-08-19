@@ -33,7 +33,7 @@ const SocialProof = () => {
             Real results from real businesses
           </h2>
           <p className="text-xl text-muted-foreground font-humanist">
-            Join businesses already growing with AI Neno
+            Join businesses already growing with ClientFactory
           </p>
         </div>
 

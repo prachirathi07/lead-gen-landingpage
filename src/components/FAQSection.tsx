@@ -25,7 +25,7 @@ const FAQSection = () => {
     },
     {
       question: "Can I integrate this with my existing tools?",
-      answer: "Absolutely. AI Neno integrates with WhatsApp, custom forms, landing pages, and most CRM systems. Our omni-channel approach ensures all leads flow into one unified inbox that connects with your existing workflow."
+      answer: "Absolutely. ClientFactory integrates with WhatsApp, custom forms, landing pages, and most CRM systems. Our omni-channel approach ensures all leads flow into one unified inbox that connects with your existing workflow."
     }
   ];
 
@@ -38,7 +38,7 @@ const FAQSection = () => {
               Frequently asked questions
             </h2>
             <p className="text-xl text-muted-foreground font-humanist">
-              Everything you need to know about AI Neno
+              Everything you need to know about ClientFactory
             </p>
           </div>
 

@@ -78,7 +78,7 @@ const HeroSection = () => {
             <div className="relative z-10">
               <img 
                 src={heroImageUrl} 
-                alt="Revenue growth with AI Neno LeadGen - Transform ₹1 into qualified leads" 
+                alt="Revenue growth with ClientFactory LeadGen - Transform ₹1 into qualified leads" 
                 className="w-full h-auto rounded-2xl shadow-hero"
               />
             </div>

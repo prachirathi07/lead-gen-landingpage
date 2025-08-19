@@ -31,7 +31,7 @@ const WaitlistSection = () => {
                 Join the waitlist
               </h2>
               <p className="text-xl text-slate-300 font-humanist">
-                Be among the first to transform your lead generation with AI Neno
+                Be among the first to transform your lead generation with ClientFactory
               </p>
             </div>
 

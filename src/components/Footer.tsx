@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-cta rounded-lg flex items-center justify-center">
                 <span className="text-background font-bold text-lg">N</span>
               </div>
-              <span className="font-geometric font-bold text-xl">AI Neno</span>
+              <span className="font-geometric font-bold text-xl">ClientFactory</span>
             </div>
             <p className="text-slate-300 font-humanist text-sm leading-relaxed">
               Predictable lead generation for every business type.
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 pt-8">
           <div className="flex flex-col space-y-4">
             <p className="text-slate-400 font-humanist text-sm text-center">
-              © {currentYear} AI Neno Innovation Private Limited. All rights reserved.
+              © {currentYear} ClientFactory Innovation Private Limited. All rights reserved.
             </p>
             
             {/* Disclaimer */}

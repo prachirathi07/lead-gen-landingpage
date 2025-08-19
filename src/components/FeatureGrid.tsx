@@ -33,7 +33,7 @@ const FeatureGrid = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-geometric font-bold text-foreground mb-4">
-            Why AI Neno works
+            Why ClientFactory works
           </h2>
           <p className="text-xl text-muted-foreground font-humanist max-w-2xl mx-auto">
             Built for businesses that need predictable, cost-effective lead generation
