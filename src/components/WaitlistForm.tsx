@@ -80,7 +80,7 @@ const WaitlistForm = () => {
 
     // Submit to n8n webhook for Google Sheets
     try {
-      const response = await fetch("https://n8n.srv963601.hstgr.cloud/webhook-test/2bf88ca5-ec30-4676-8fbb-29c7e2f5daf2", {
+      const response = await fetch("https://n8n.srv963601.hstgr.cloud/webhook/2bf88ca5-ec30-4676-8fbb-29c7e2f5daf2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
