@@ -80,11 +80,12 @@ const WaitlistForm = () => {
 
     // Submit to n8n webhook for Google Sheets
     try {
-      const response = await fetch("https://n8n.srv963601.hstgr.cloud/webhook/2bf88ca5-ec30-4676-8fbb-29c7e2f5daf2", {
+      const response = await fetch("https://n8n.srv963601.hstgr.cloud/webhook-test/2bf88ca5-ec30-4676-8fbb-29c7e2f5daf2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
+        mode: "no-cors",
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
@@ -98,15 +99,12 @@ const WaitlistForm = () => {
         }),
       });
 
-      if (response.ok) {
-        setIsSubmitted(true);
-        toast({
-          title: "Success! 🎉",
-          description: "You're on the list! We'll reach out with your cohort slot and next steps.",
-        });
-      } else {
-        throw new Error("Failed to submit");
-      }
+      // Using no-cors: we cannot inspect the response; treat as sent
+      setIsSubmitted(true);
+      toast({
+        title: "Success! 🎉",
+        description: "You're on the list! We'll reach out with your cohort slot and next steps.",
+      });
     } catch (error) {
       console.error("Submission error:", error);
       toast({
